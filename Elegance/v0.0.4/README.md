@@ -16,7 +16,7 @@ Focused tabs will remain fully expanded for maximum readability, while the tabs 
 The find bar has been redesigned to take up less screen space, now appearing as a little popup overlay in the top-right corner of the browser window.
 
 
-#### :info: Usage
+## :information_source: Usage
 1. Navigate to `about:config` and set the follow preferences:
 	- `toolkit.legacyUserProfileCustomizations.stylesheets` = `true`
 	- `svg.context-properties.content.enabled` = `true`
