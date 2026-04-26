@@ -217,6 +217,7 @@ menupopup, panel
 {
 	#trust-icon-container { height:initial !important; }
 }
+.urlbar-page-action, .urlbar-revert-button, .urlbar-go-button, .search-go-button { height:initial !important; padding:calc((var(--urlbar-min-height) - 22px) / 2) !important; }
 
 /* [ TOOLBAR ] */
 toolbar .toolbarbutton-1
