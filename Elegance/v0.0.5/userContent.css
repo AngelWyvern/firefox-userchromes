@@ -1,0 +1,36 @@
+/* ========================== */
+/* ||   Elegance  v0.0.5   || */
+/* ||  Created by Chimera  || */
+/* ========================== */
+
+
+:root
+{
+	--uc-radius-xs:3.75px;
+	--uc-radius-small:7.5px;
+	--uc-radius-ms:11.25px;
+	--uc-radius-medium:15px;
+	--uc-radius-ml:17.5px;
+	--uc-radius-large:20px;
+	--uc-radius-xl:25px;
+	--uc-radius-round:2147483647px;
+	--uc-tab-maxwidth:200px;
+	--ff-mica-color:light-dark(#fff9, #ffffff26);
+
+	--border-radius-small:var(--uc-radius-small) !important;
+	--border-radius-medium:var(--uc-radius-medium) !important;
+	--border-radius-large:var(--uc-radius-ml) !important;
+	--border-radius-circle:var(--uc-radius-round) !important;
+}
+
+@-moz-document url(about:newtab), url("about:home")
+{
+	:root
+	{
+		--newtab-background-color:#0000 !important;
+		--newtab-background-color-secondary:var(--newtab-background-card) !important;
+		--newtab-background-card:var(--ff-mica-color) !important;
+	}
+
+	.search-wrapper .search-handoff-button, .search-wrapper input { border-radius:var(--uc-radius-round) !important; }
+}
