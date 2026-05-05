@@ -316,14 +316,17 @@ menuseparator { padding-inline:1em !important; }
 	& .findbar-container > checkbox:last-of-type { margin-inline:8px 4px !important; }*/
 	/*& .findbar-label { margin:2px 8px 0 !important; text-align:center !important; }*/
 	/*& .findbar-label:not([hidden]) { display:flow-root !important; }*/
-	& .findbar-label { display:none !important; position:absolute; background-color:var(--panel-background) !important; border-radius:var(--uc-radius-round) !important; padding:3.75px 8.75px !important; bottom:-31px; left:50%; transform:TranslateX(-50%) !important; box-shadow:var(--box-shadow-level-2); transition:transform var(--uc-trans); }
+	& .findbar-label { display:none !important; position:absolute; width:max-content !important; max-width:400px !important; background-color:var(--panel-background) !important; border-radius:var(--uc-radius-medium) !important; padding:3.75px 8.75px !important; bottom:0; left:50%; text-align:center !important; transform:Translate(-50%, calc(100% + 7px)) !important; box-shadow:var(--box-shadow-level-2); transition:transform var(--uc-trans); }
+	& .found-matches { z-index:1 !important; }
 	& .findbar-find-status { font-weight:normal !important; }
 	& .found-matches, .findbar-find-status { display:flow-root !important; }
-	& .found-matches[hidden], .findbar-find-status:empty { transform:TranslateX(-50%) Scale(0) !important; }
+	& .found-matches[hidden], .findbar-find-status:empty { transform:Translate(-50%, calc(100% + 7px)) Scale(0) !important; }
 	& .found-matches[value='']:before { display:none !important; }
 	& .found-matches[value='']:after { content:'0 of 0 matches' !important; display:block !important; }
 	& toolbarbutton { border-radius:var(--uc-radius-ms) !important; }
 	& .findbar-closebutton { box-sizing:content-box; position:absolute !important; top:7.5px; right:7.5px; margin:0 !important; padding:4px 7px !important; width:16px !important; height:16px !important; }
+	
+	&:has(.found-matches:not([hidden])):has(.findbar-find-status:not(:empty)) .findbar-find-status { transform:Translate(-50%, calc(200% + 14px)) !important;  }
 
 	&:where([hidden]) { transform:Translate(224px, -64px) Scale(0); filter:blur(100px); opacity:0; }
 
