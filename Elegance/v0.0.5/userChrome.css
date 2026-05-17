@@ -42,6 +42,11 @@
 	--arrowpanel-menuitem-margin:var(--panel-menuitem-margin) !important;
 	--arrowpanel-menuitem-padding-block:var(--panel-menuitem-padding-block) !important;
 	--arrowpanel-menuitem-padding-inline:var(--panel-menuitem-padding-inline) !important;
+	--toolbar-bgcolor:var(--toolbar-background-color);
+	--toolbarbutton-inner-padding:var(--toolbarbutton-padding-inner);
+	--toolbarbutton-outer-padding:var(--toolbarbutton-padding-outer);
+	--toolbarbutton-hover-background:var(--toolbarbutton-background-color-hover);
+	--toolbarbutton-active-background:var(--toolbarbutton-background-color-active);
 }
 
 menupopup, panel
