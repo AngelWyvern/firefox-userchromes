@@ -42,6 +42,7 @@
 	--arrowpanel-menuitem-margin:var(--panel-menuitem-margin) !important;
 	--arrowpanel-menuitem-padding-block:var(--panel-menuitem-padding-block) !important;
 	--arrowpanel-menuitem-padding-inline:var(--panel-menuitem-padding-inline) !important;
+	--panel-background:var(--panel-background-color);
 	--toolbar-bgcolor:var(--toolbar-background-color);
 	--toolbarbutton-inner-padding:var(--toolbarbutton-padding-inner);
 	--toolbarbutton-outer-padding:var(--toolbarbutton-padding-outer);
